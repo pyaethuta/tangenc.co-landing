@@ -1,0 +1,62 @@
+@import "tailwindcss";
+:root{
+  --fs-h1: 34px;
+  --fs-h2: 24px;
+  --fs-h3: 24px;
+}
+@media (width >= 48rem) {
+  :root{
+     --fs-h1:48px;
+     --fs-h2:36px;
+  }
+}
+
+
+
+body{
+  font-family: "Manrope", serif;
+  color:white;
+}
+
+.h1{
+  font-size: var(--fs-h1);
+  line-height: 55px;
+}
+.h3{
+  font-size:var(--fs-h3);
+  color: #03FFA3;
+  font-weight: 600px;
+}
+.h2{
+  font-size: var(--fs-h2);
+  color: #03FFA3;
+  font-weight: 600;
+  line-height: 44px;
+}
+.h5{
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 600;
+
+}
+
+.p{
+  font-size:18px;
+  line-height: 28px;
+  color: white;
+}
+
+.splide__pagination__page  {
+  bottom: -2rem;
+
+}
+.splide__pagination__page.is-active  {
+  
+  background: #03FFA3!important;
+}
+.headers{
+  @apply  text-lg md:text-2xl pt-14 pb-4 font-semibold;
+}
+.text{
+  @apply leading-7 text-sm md:text-lg ;
+}
