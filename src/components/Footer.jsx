@@ -14,7 +14,7 @@ export const Footer = () => {
             <div className="space-y-5 mb-[50px] md:w-[400px]">
               <h4 className="font-medium text-[20px]/[26px] cursor-pointer" data-aos="fade-up">
                 <a href="/">
-                  <img src={Logo} className="inline-block size-[38px]" alt="Logo" /> Tenganc.co
+                  <img src={Logo} className="inline-block size-[38px]" alt="Logo" /> Tangenc.co
                 </a>
               </h4>
               <div className="max-w-[600px] text-white text-[16px]/[20px] md:text-[14px]/[20px]" data-aos="fade-up">

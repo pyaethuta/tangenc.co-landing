@@ -17,7 +17,7 @@ export const TermsOfUse = () => {
         <h1 className='headers'>Changes to This Agreement</h1>
         <p className='text'>We reserve the right to modify this Agreement at any time. You should check this Agreement periodically for changes. By using Neutra after we post any changes to this Agreement, you agree to accept those changes, whether or not you have reviewed them.</p>
         <h1 className='headers'>Contact Us</h1>
-        <p className='text'>If you have any questions about this Agreement, please contact us at </p><a href="" className='text-[#03FFA3]'>info@tengenc.co</a>
+        <p className='text'>If you have any questions about this Agreement, please contact us at </p><a href="" className='text-[#03FFA3]'>info@tangenc.co</a>
         
       </div>
       

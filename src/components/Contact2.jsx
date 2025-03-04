@@ -106,7 +106,7 @@ export const Contact2 = () => {
                                 <button
                                     type="submit"
                                     disabled={isSubmitting}
-                                    className='bg-[#03FFA3] text-black font-semibold py-3 text-[14px]/[1.2px]  rounded-[10px] w-full h-[42px] cursor-pointer active:bg-[#00bd78]'
+                                    className='bg-[#03FFA3] text-black font-semibold py-3 text-[14px]/[1.2px]  rounded-[10px] w-full h-[45px] cursor-pointer active:bg-[#00bd78]'
                                 >
                                     {isSubmitting ? 'Sending...' : 'Submit'}
                                 </button>
