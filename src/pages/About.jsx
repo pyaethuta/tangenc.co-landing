@@ -1,6 +1,26 @@
-import { members } from '../constant'
+import { useEffect, useState } from 'react'
 import MembersCard from '../components/MembersCard'
+import { getMembers } from '../api/members'
+
 export const About = () => {
+  const [members, setMembers] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchMembers = async () => {
+      try {
+        const data = await getMembers();
+        setMembers(data);
+      } catch (error) {
+        console.error('Error fetching members:', error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchMembers();
+  }, []);
+
   return (
     <div className='container mx-auto mt-[30px] md:mt-[70px]'>
       <div className='mx-[10px] md:mx-auto bg-[#1A1A1A]  rounded-[32px] h-auto  pt-[35px] md:pt-[70px] px-[24px] md:px-[64px] pb-[8px]  max-w-[1150px] mb-6'>
@@ -26,19 +46,27 @@ export const About = () => {
           </div><br /><br />
         </div>
 
-        <div className="bg-[#262626] rounded-t-4xl px-4 py-16 md:px-[10px] -mx-[12px] md:-mx-[5px] md:py-[60px] mt-28 ">
+        <div className="bg-[#262626] rounded-4xl px-4 py-16 md:px-[10px] -mx-[12px] md:-mx-[5px] md:py-[60px] mt-28 ">
             <div className="text-center max-w-[600px] mx-auto px-4 tracking-wide leading-6 text-sm md:text-lg">
               <h1 className="text-[#03FFA3] text-2xl md:text-4xl font-bold pb-4" data-aos="fade-up">Meet the Minds Behind Tangenc</h1>
               <p data-aos="fade-up">Discover the talented individuals who bring Tangenc to life, each dedicated to pushing the boundaries of digital solutions.</p>
             </div>
             <div className='grid grid-cols-2 md:grid-cols-4 gap-6  mt-20 mx-[10px] md:mx-auto  max-w-[1150px]' data-aos="fade-up">
-              {members.map((member) => (
-              <MembersCard key={member.id} member={member} />
-              ))}
+              {loading ? (
+                Array(9).fill(0).map((_, index) => (
+                  <div key={index} className="animate-pulse">
+                    <div className="w-full h-[200px] md:h-[280px] rounded-[34px] bg-gray-700"></div>
+                    <div className="h-6 bg-gray-700 rounded mt-4 w-3/4"></div>
+                    <div className="h-4 bg-gray-700 rounded mt-2 w-1/2"></div>
+                  </div>
+                ))
+              ) : (
+                members.map((member) => (
+                  <MembersCard key={member.id} member={member} />
+                ))
+              )}
             </div>
         </div>
-
-
     </div>
   )
 }
