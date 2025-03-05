@@ -156,7 +156,7 @@ export const members = [
     },
     {
         id:9,
-        name: "Sair Yair Lin Htet",
+        name: "Sai Yair Lin Htet",
         position: "Junior Operation Analyst",
         profile: sylh,
     }
