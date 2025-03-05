@@ -100,7 +100,7 @@ export const Contact2 = () => {
                                         placeholder="Enter message"
                                         required
                                         rows="4"
-                                        className='mt-[8px] bg-white text-black p-3 text-[14px]/[1.2px]  rounded-[10px] w-full h-[80px] focus:outline-[#00bd78]'
+                                        className='mt-[8px] bg-white text-black p-3 text-[14px]/[20px]  rounded-[10px] w-full h-[80px] focus:outline-[#00bd78]'
                                     ></textarea>
                                 </div>
                                 <button
