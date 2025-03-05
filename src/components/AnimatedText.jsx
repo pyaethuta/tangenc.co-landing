@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const AnimatedText = () => {
-  const text = "Since 2023, we have been creating projects that remain relevant today, tomorrow, and for decades to come";
+  const text = "Since 2022, we have been creating projects that remain relevant today, tomorrow, and for decades to come";
   const words = text.split(' ');
 
   return (

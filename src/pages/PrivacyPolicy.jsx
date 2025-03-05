@@ -5,7 +5,7 @@ export const PrivacyPolicy = () => {
     <div className='container mx-auto mt-[30px] md:mt-[70px] '>
       <div className='mx-[10px] md:mx-auto  h-auto  pt-[90px] md:pt-[65px] max-w-[720px] tracking-wide pb-[90px] md:pb-[90px]'>
         <h1 className=' text-3xl md:text-5xl pb-4 font-bold '>Privacy Policy</h1>
-        <p className='text'>September 27, 2023</p>
+        <p className='text'>September 27, 2022</p>
         <h1 className='headers'>Introduction</h1>
         <p className=' pt-4 leading-7 text'>Welcome to Codify (&quot;we&quot;, &quot;our&quot;, or &quot;us&quot;). At Tangenc, we are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, and protect your personal data when you use our website, products, or services. By accessing or using our services, you consent to the practices described in this Privacy Policy.</p>
         

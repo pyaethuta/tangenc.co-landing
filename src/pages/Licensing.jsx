@@ -5,7 +5,7 @@ export const Licensing = () => {
     <div className='container mx-auto mt-[30px] md:mt-[50px] '>
       <div className='mx-[10px] md:mx-auto  h-auto  pt-[90px] md:pt-[65px] max-w-[720px] tracking-wide pb-[90px] md:pb-[90px]'>
         <h1 className=' text-3xl md:text-5xl pb-4 font-bold '>Licensing</h1>
-        <p className='text'>September 27, 2023</p>
+        <p className='text'>September 27, 2022</p>
         <h1 className=' mt-[40px] text-3xl md:text-4xl pb-4 font-bold'>Software Licensing Agreement</h1>
         <p className=' pt-4 leading-7 text'>This Software Licensing Agreement (&quot;Agreement&quot;) is entered into between [Your Company Name], hereinafter referred to as the &quot;Licensor,&quot; and the individual or entity that accepts the terms of this Agreement, hereinafter referred to as the &quot;Licensee.&quot;</p>
         
